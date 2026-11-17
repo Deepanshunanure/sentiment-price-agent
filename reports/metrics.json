@@ -1,0 +1,347 @@
+{
+  "HKEX": {
+    "exchange": "HKEX",
+    "total_test_samples": 175,
+    "overall_naive": {
+      "mae": 0.005007,
+      "rmse": 0.008355,
+      "directional_accuracy": 0.3429
+    },
+    "overall_ridge": {
+      "mae": 0.005845,
+      "rmse": 0.008537,
+      "directional_accuracy": 0.5029
+    },
+    "overall_lgbm": {
+      "mae": 0.004879,
+      "rmse": 0.008168,
+      "directional_accuracy": 0.5371
+    },
+    "ridge_vs_baseline": {
+      "mae_improvement_pct": -16.74,
+      "rmse_improvement_pct": -2.18,
+      "directional_accuracy_diff_pct": 16.0,
+      "beats_baseline_mae": false,
+      "beats_baseline_accuracy": true
+    },
+    "lgbm_vs_baseline": {
+      "mae_improvement_pct": 2.56,
+      "rmse_improvement_pct": 2.24,
+      "directional_accuracy_diff_pct": 19.42,
+      "beats_baseline_mae": true,
+      "beats_baseline_accuracy": true
+    },
+    "fold_details": [
+      {
+        "fold": 1,
+        "n_train": 170,
+        "n_test": 40,
+        "naive": {
+          "mae": 0.005887,
+          "rmse": 0.009724,
+          "directional_accuracy": 0.325
+        },
+        "ridge": {
+          "mae": 0.006439,
+          "rmse": 0.009432,
+          "directional_accuracy": 0.475
+        },
+        "lgbm": {
+          "mae": 0.005456,
+          "rmse": 0.009396,
+          "directional_accuracy": 0.45
+        }
+      },
+      {
+        "fold": 2,
+        "n_train": 210,
+        "n_test": 40,
+        "naive": {
+          "mae": 0.004325,
+          "rmse": 0.005852,
+          "directional_accuracy": 0.3
+        },
+        "ridge": {
+          "mae": 0.004755,
+          "rmse": 0.005822,
+          "directional_accuracy": 0.575
+        },
+        "lgbm": {
+          "mae": 0.00405,
+          "rmse": 0.005368,
+          "directional_accuracy": 0.55
+        }
+      },
+      {
+        "fold": 3,
+        "n_train": 250,
+        "n_test": 40,
+        "naive": {
+          "mae": 0.004924,
+          "rmse": 0.007728,
+          "directional_accuracy": 0.475
+        },
+        "ridge": {
+          "mae": 0.006272,
+          "rmse": 0.009021,
+          "directional_accuracy": 0.425
+        },
+        "lgbm": {
+          "mae": 0.005356,
+          "rmse": 0.008461,
+          "directional_accuracy": 0.425
+        }
+      },
+      {
+        "fold": 4,
+        "n_train": 290,
+        "n_test": 55,
+        "naive": {
+          "mae": 0.004925,
+          "rmse": 0.00922,
+          "directional_accuracy": 0.2909
+        },
+        "ridge": {
+          "mae": 0.005894,
+          "rmse": 0.00913,
+          "directional_accuracy": 0.5273
+        },
+        "lgbm": {
+          "mae": 0.004717,
+          "rmse": 0.008661,
+          "directional_accuracy": 0.6727
+        }
+      }
+    ]
+  },
+  "KRX": {
+    "exchange": "KRX",
+    "total_test_samples": 150,
+    "overall_naive": {
+      "mae": 0.008033,
+      "rmse": 0.011619,
+      "directional_accuracy": 0.5933
+    },
+    "overall_ridge": {
+      "mae": 0.008393,
+      "rmse": 0.011459,
+      "directional_accuracy": 0.52
+    },
+    "overall_lgbm": {
+      "mae": 0.009201,
+      "rmse": 0.012427,
+      "directional_accuracy": 0.5267
+    },
+    "ridge_vs_baseline": {
+      "mae_improvement_pct": -4.48,
+      "rmse_improvement_pct": 1.38,
+      "directional_accuracy_diff_pct": -7.33,
+      "beats_baseline_mae": false,
+      "beats_baseline_accuracy": false
+    },
+    "lgbm_vs_baseline": {
+      "mae_improvement_pct": -14.54,
+      "rmse_improvement_pct": -6.95,
+      "directional_accuracy_diff_pct": -6.66,
+      "beats_baseline_mae": false,
+      "beats_baseline_accuracy": false
+    },
+    "fold_details": [
+      {
+        "fold": 1,
+        "n_train": 145,
+        "n_test": 35,
+        "naive": {
+          "mae": 0.008115,
+          "rmse": 0.013536,
+          "directional_accuracy": 0.3143
+        },
+        "ridge": {
+          "mae": 0.009553,
+          "rmse": 0.013993,
+          "directional_accuracy": 0.2857
+        },
+        "lgbm": {
+          "mae": 0.010108,
+          "rmse": 0.014726,
+          "directional_accuracy": 0.3714
+        }
+      },
+      {
+        "fold": 2,
+        "n_train": 180,
+        "n_test": 35,
+        "naive": {
+          "mae": 0.007462,
+          "rmse": 0.010349,
+          "directional_accuracy": 0.5714
+        },
+        "ridge": {
+          "mae": 0.007706,
+          "rmse": 0.010212,
+          "directional_accuracy": 0.6286
+        },
+        "lgbm": {
+          "mae": 0.008396,
+          "rmse": 0.010294,
+          "directional_accuracy": 0.4571
+        }
+      },
+      {
+        "fold": 3,
+        "n_train": 215,
+        "n_test": 35,
+        "naive": {
+          "mae": 0.011456,
+          "rmse": 0.014584,
+          "directional_accuracy": 0.7429
+        },
+        "ridge": {
+          "mae": 0.010637,
+          "rmse": 0.013205,
+          "directional_accuracy": 0.6286
+        },
+        "lgbm": {
+          "mae": 0.012958,
+          "rmse": 0.015873,
+          "directional_accuracy": 0.6
+        }
+      },
+      {
+        "fold": 4,
+        "n_train": 250,
+        "n_test": 45,
+        "naive": {
+          "mae": 0.005751,
+          "rmse": 0.007668,
+          "directional_accuracy": 0.7111
+        },
+        "ridge": {
+          "mae": 0.00628,
+          "rmse": 0.008288,
+          "directional_accuracy": 0.5333
+        },
+        "lgbm": {
+          "mae": 0.006201,
+          "rmse": 0.00823,
+          "directional_accuracy": 0.6444
+        }
+      }
+    ]
+  },
+  "POOLED_ALL": {
+    "exchange": "POOLED_ALL",
+    "total_test_samples": 320,
+    "overall_naive": {
+      "mae": 0.006299,
+      "rmse": 0.009894,
+      "directional_accuracy": 0.4906
+    },
+    "overall_ridge": {
+      "mae": 0.007126,
+      "rmse": 0.010884,
+      "directional_accuracy": 0.425
+    },
+    "overall_lgbm": {
+      "mae": 0.007066,
+      "rmse": 0.010833,
+      "directional_accuracy": 0.5094
+    },
+    "ridge_vs_baseline": {
+      "mae_improvement_pct": -13.13,
+      "rmse_improvement_pct": -10.01,
+      "directional_accuracy_diff_pct": -6.56,
+      "beats_baseline_mae": false,
+      "beats_baseline_accuracy": false
+    },
+    "lgbm_vs_baseline": {
+      "mae_improvement_pct": -12.18,
+      "rmse_improvement_pct": -9.49,
+      "directional_accuracy_diff_pct": 1.88,
+      "beats_baseline_mae": false,
+      "beats_baseline_accuracy": true
+    },
+    "fold_details": [
+      {
+        "fold": 1,
+        "n_train": 320,
+        "n_test": 80,
+        "naive": {
+          "mae": 0.006164,
+          "rmse": 0.010832,
+          "directional_accuracy": 0.425
+        },
+        "ridge": {
+          "mae": 0.007742,
+          "rmse": 0.012207,
+          "directional_accuracy": 0.35
+        },
+        "lgbm": {
+          "mae": 0.007586,
+          "rmse": 0.012273,
+          "directional_accuracy": 0.3875
+        }
+      },
+      {
+        "fold": 2,
+        "n_train": 400,
+        "n_test": 80,
+        "naive": {
+          "mae": 0.006621,
+          "rmse": 0.009216,
+          "directional_accuracy": 0.275
+        },
+        "ridge": {
+          "mae": 0.006715,
+          "rmse": 0.009135,
+          "directional_accuracy": 0.5125
+        },
+        "lgbm": {
+          "mae": 0.006305,
+          "rmse": 0.008675,
+          "directional_accuracy": 0.575
+        }
+      },
+      {
+        "fold": 3,
+        "n_train": 480,
+        "n_test": 80,
+        "naive": {
+          "mae": 0.006828,
+          "rmse": 0.010237,
+          "directional_accuracy": 0.5625
+        },
+        "ridge": {
+          "mae": 0.007794,
+          "rmse": 0.012169,
+          "directional_accuracy": 0.4
+        },
+        "lgbm": {
+          "mae": 0.007943,
+          "rmse": 0.011975,
+          "directional_accuracy": 0.5
+        }
+      },
+      {
+        "fold": 4,
+        "n_train": 560,
+        "n_test": 80,
+        "naive": {
+          "mae": 0.005581,
+          "rmse": 0.009193,
+          "directional_accuracy": 0.7
+        },
+        "ridge": {
+          "mae": 0.006253,
+          "rmse": 0.009661,
+          "directional_accuracy": 0.4375
+        },
+        "lgbm": {
+          "mae": 0.006428,
+          "rmse": 0.010007,
+          "directional_accuracy": 0.575
+        }
+      }
+    ]
+  }
+}

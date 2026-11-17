@@ -25,8 +25,8 @@ data/cache/*
 
 # Generated reports & models
 reports/*.html
-reports/*.json
-reports/*.csv
+!reports/metrics.json
+!reports/metrics.csv
 !reports/.gitkeep
 
 # IDE & OS
