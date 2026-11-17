@@ -1,0 +1,32 @@
+project:
+  name: "sentiment-price-agent"
+  timezone: "UTC"
+
+scrapers:
+  window_days: 10
+  max_items_per_ticker: 50
+  timeout_seconds: 60
+  max_retries: 3
+  backoff_factor: 2.0
+
+exa:
+  num_results_per_ticker: 10
+  search_type: "auto"
+  use_highlights: true
+  recency_days: 10
+
+prices:
+  hourly_period_days: 10
+  daily_period_days: 60
+  interval_hourly: "1h"
+  interval_daily: "1d"
+
+cache:
+  cache_dir: "data/cache"
+  enabled: true
+  ttl_hours: 24
+
+storage:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  reports_dir: "reports"

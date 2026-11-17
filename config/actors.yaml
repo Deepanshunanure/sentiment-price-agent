@@ -1,0 +1,31 @@
+# Apify Scraper Actor Configurations
+# Per strict project rules:
+# - Never invent actor IDs.
+# - If an actor ID is null/missing or the actor fails during execution,
+#   log a clear error/warning and continue with the remaining sources.
+
+exchanges:
+  HKEX:
+    sources:
+      - name: "lihkg"
+        description: "LIHKG Hong Kong forum discussion scraper"
+        actor_id: "obtainable_sculpture/my-actor"
+        input_template:
+          startUrls:
+            - url: "https://lihkg.com/category/5"
+          maxRequestsPerCrawl: 30
+      - name: "futu_moomoo"
+        description: "Futu / Moomoo retail investor community"
+        actor_id: null
+        input_template: {}
+
+  KRX:
+    sources:
+      - name: "naver_finance"
+        description: "Naver Finance stock discussion board"
+        actor_id: null
+        input_template: {}
+      - name: "telegram_kr"
+        description: "Korean financial stock Telegram channels"
+        actor_id: null
+        input_template: {}

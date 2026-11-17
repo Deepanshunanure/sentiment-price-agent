@@ -1,0 +1,52 @@
+exchanges:
+  HKEX:
+    name: "Hong Kong Stock Exchange"
+    currency: "HKD"
+    timezone: "Asia/Hong_Kong"
+    tickers:
+      - ticker: "0700.HK"
+        name: "Tencent Holdings Ltd"
+        keywords: ["騰訊控股", "騰訊", "腾讯"]
+        cashtags: ["#0700.HK", "#700.HK", "#0700", "#700"]
+      - ticker: "9988.HK"
+        name: "Alibaba Group Holding Ltd"
+        keywords: ["阿里巴巴", "阿里"]
+        cashtags: ["#9988.HK", "#9988"]
+      - ticker: "0005.HK"
+        name: "HSBC Holdings plc"
+        keywords: ["滙豐控股", "滙豐", "汇丰", "大笨象"]
+        cashtags: ["#0005.HK", "#0005", "#5.HK"]
+      - ticker: "1299.HK"
+        name: "AIA Group Ltd"
+        keywords: ["友邦保險", "友邦", "友邦保险"]
+        cashtags: ["#1299.HK", "#1299"]
+      - ticker: "3690.HK"
+        name: "Meituan"
+        keywords: ["美團", "美团"]
+        cashtags: ["#3690.HK", "#3690"]
+
+  KRX:
+    name: "Korea Exchange"
+    currency: "KRW"
+    timezone: "Asia/Seoul"
+    tickers:
+      - ticker: "005930.KS"
+        name: "Samsung Electronics Co Ltd"
+        keywords: ["삼성전자", "삼전"]
+        cashtags: ["#005930", "#005930.KS", "$005930"]
+      - ticker: "000660.KS"
+        name: "SK Hynix Inc"
+        keywords: ["SK하이닉스", "하이닉스"]
+        cashtags: ["#000660", "#000660.KS", "$000660"]
+      - ticker: "035420.KS"
+        name: "NAVER Corp"
+        keywords: ["네이버"]
+        cashtags: ["#035420", "#035420.KS", "$035420"]
+      - ticker: "005380.KS"
+        name: "Hyundai Motor Co"
+        keywords: ["현대자동차", "현대차"]
+        cashtags: ["#005380", "#005380.KS", "$005380"]
+      - ticker: "051910.KS"
+        name: "LG Chem Ltd"
+        keywords: ["LG화학"]
+        cashtags: ["#051910", "#051910.KS", "$051910"]
