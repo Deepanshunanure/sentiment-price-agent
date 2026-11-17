@@ -8,8 +8,8 @@
       "directional_accuracy": 0.3429
     },
     "overall_ridge": {
-      "mae": 0.005845,
-      "rmse": 0.008537,
+      "mae": 0.005941,
+      "rmse": 0.008613,
       "directional_accuracy": 0.5029
     },
     "overall_lgbm": {
@@ -18,8 +18,8 @@
       "directional_accuracy": 0.5371
     },
     "ridge_vs_baseline": {
-      "mae_improvement_pct": -16.74,
-      "rmse_improvement_pct": -2.18,
+      "mae_improvement_pct": -18.65,
+      "rmse_improvement_pct": -3.09,
       "directional_accuracy_diff_pct": 16.0,
       "beats_baseline_mae": false,
       "beats_baseline_accuracy": true
@@ -63,7 +63,7 @@
         },
         "ridge": {
           "mae": 0.004755,
-          "rmse": 0.005822,
+          "rmse": 0.005821,
           "directional_accuracy": 0.575
         },
         "lgbm": {
@@ -82,8 +82,8 @@
           "directional_accuracy": 0.475
         },
         "ridge": {
-          "mae": 0.006272,
-          "rmse": 0.009021,
+          "mae": 0.006271,
+          "rmse": 0.00902,
           "directional_accuracy": 0.425
         },
         "lgbm": {
@@ -102,8 +102,8 @@
           "directional_accuracy": 0.2909
         },
         "ridge": {
-          "mae": 0.005894,
-          "rmse": 0.00913,
+          "mae": 0.006201,
+          "rmse": 0.009354,
           "directional_accuracy": 0.5273
         },
         "lgbm": {
@@ -123,25 +123,25 @@
       "directional_accuracy": 0.5933
     },
     "overall_ridge": {
-      "mae": 0.008393,
-      "rmse": 0.011459,
-      "directional_accuracy": 0.52
+      "mae": 0.009451,
+      "rmse": 0.014173,
+      "directional_accuracy": 0.4867
     },
     "overall_lgbm": {
-      "mae": 0.009201,
-      "rmse": 0.012427,
+      "mae": 0.00917,
+      "rmse": 0.012398,
       "directional_accuracy": 0.5267
     },
     "ridge_vs_baseline": {
-      "mae_improvement_pct": -4.48,
-      "rmse_improvement_pct": 1.38,
-      "directional_accuracy_diff_pct": -7.33,
+      "mae_improvement_pct": -17.65,
+      "rmse_improvement_pct": -21.98,
+      "directional_accuracy_diff_pct": -10.66,
       "beats_baseline_mae": false,
       "beats_baseline_accuracy": false
     },
     "lgbm_vs_baseline": {
-      "mae_improvement_pct": -14.54,
-      "rmse_improvement_pct": -6.95,
+      "mae_improvement_pct": -14.15,
+      "rmse_improvement_pct": -6.7,
       "directional_accuracy_diff_pct": -6.66,
       "beats_baseline_mae": false,
       "beats_baseline_accuracy": false
@@ -157,8 +157,8 @@
           "directional_accuracy": 0.3143
         },
         "ridge": {
-          "mae": 0.009553,
-          "rmse": 0.013993,
+          "mae": 0.009363,
+          "rmse": 0.013833,
           "directional_accuracy": 0.2857
         },
         "lgbm": {
@@ -177,9 +177,9 @@
           "directional_accuracy": 0.5714
         },
         "ridge": {
-          "mae": 0.007706,
-          "rmse": 0.010212,
-          "directional_accuracy": 0.6286
+          "mae": 0.008632,
+          "rmse": 0.011912,
+          "directional_accuracy": 0.5429
         },
         "lgbm": {
           "mae": 0.008396,
@@ -197,9 +197,9 @@
           "directional_accuracy": 0.7429
         },
         "ridge": {
-          "mae": 0.010637,
-          "rmse": 0.013205,
-          "directional_accuracy": 0.6286
+          "mae": 0.01433,
+          "rmse": 0.020929,
+          "directional_accuracy": 0.5429
         },
         "lgbm": {
           "mae": 0.012958,
@@ -217,13 +217,13 @@
           "directional_accuracy": 0.7111
         },
         "ridge": {
-          "mae": 0.00628,
-          "rmse": 0.008288,
-          "directional_accuracy": 0.5333
+          "mae": 0.006363,
+          "rmse": 0.008346,
+          "directional_accuracy": 0.5556
         },
         "lgbm": {
-          "mae": 0.006201,
-          "rmse": 0.00823,
+          "mae": 0.006097,
+          "rmse": 0.008084,
           "directional_accuracy": 0.6444
         }
       }
@@ -238,25 +238,25 @@
       "directional_accuracy": 0.4906
     },
     "overall_ridge": {
-      "mae": 0.007126,
-      "rmse": 0.010884,
-      "directional_accuracy": 0.425
+      "mae": 0.007723,
+      "rmse": 0.011891,
+      "directional_accuracy": 0.4125
     },
     "overall_lgbm": {
       "mae": 0.007066,
-      "rmse": 0.010833,
+      "rmse": 0.010838,
       "directional_accuracy": 0.5094
     },
     "ridge_vs_baseline": {
-      "mae_improvement_pct": -13.13,
-      "rmse_improvement_pct": -10.01,
-      "directional_accuracy_diff_pct": -6.56,
+      "mae_improvement_pct": -22.61,
+      "rmse_improvement_pct": -20.18,
+      "directional_accuracy_diff_pct": -7.81,
       "beats_baseline_mae": false,
       "beats_baseline_accuracy": false
     },
     "lgbm_vs_baseline": {
       "mae_improvement_pct": -12.18,
-      "rmse_improvement_pct": -9.49,
+      "rmse_improvement_pct": -9.54,
       "directional_accuracy_diff_pct": 1.88,
       "beats_baseline_mae": false,
       "beats_baseline_accuracy": true
@@ -272,8 +272,8 @@
           "directional_accuracy": 0.425
         },
         "ridge": {
-          "mae": 0.007742,
-          "rmse": 0.012207,
+          "mae": 0.008309,
+          "rmse": 0.012989,
           "directional_accuracy": 0.35
         },
         "lgbm": {
@@ -292,9 +292,9 @@
           "directional_accuracy": 0.275
         },
         "ridge": {
-          "mae": 0.006715,
-          "rmse": 0.009135,
-          "directional_accuracy": 0.5125
+          "mae": 0.007536,
+          "rmse": 0.011288,
+          "directional_accuracy": 0.4625
         },
         "lgbm": {
           "mae": 0.006305,
@@ -312,9 +312,9 @@
           "directional_accuracy": 0.5625
         },
         "ridge": {
-          "mae": 0.007794,
-          "rmse": 0.012169,
-          "directional_accuracy": 0.4
+          "mae": 0.008181,
+          "rmse": 0.012926,
+          "directional_accuracy": 0.3875
         },
         "lgbm": {
           "mae": 0.007943,
@@ -332,13 +332,13 @@
           "directional_accuracy": 0.7
         },
         "ridge": {
-          "mae": 0.006253,
-          "rmse": 0.009661,
-          "directional_accuracy": 0.4375
+          "mae": 0.006867,
+          "rmse": 0.010119,
+          "directional_accuracy": 0.45
         },
         "lgbm": {
-          "mae": 0.006428,
-          "rmse": 0.010007,
+          "mae": 0.00643,
+          "rmse": 0.010028,
           "directional_accuracy": 0.575
         }
       }

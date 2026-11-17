@@ -77,7 +77,7 @@ def fetch_ticker_prices(
             logger.info("Loaded cached prices for %s (%s)", ticker, interval)
             df_cached = pd.DataFrame(cached_data)
             if not df_cached.empty and "ts_utc" in df_cached.columns:
-                df_cached["ts_utc"] = pd.to_datetime(df_cached["ts_utc"], utc=True)
+                df_cached["ts_utc"] = df_cached["ts_utc"].apply(normalize_to_utc)
                 return df_cached
 
     logger.info("Fetching %s prices for %s (period=%s, interval=%s)", exchange, ticker, period, interval)

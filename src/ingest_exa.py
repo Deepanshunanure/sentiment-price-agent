@@ -117,7 +117,7 @@ class ExaNewsIngester:
                 logger.info("Loaded cached Exa news for %s (%d articles)", ticker, len(cached_data))
                 df_cached = pd.DataFrame(cached_data)
                 if not df_cached.empty and "date" in df_cached.columns:
-                    df_cached["date"] = pd.to_datetime(df_cached["date"], utc=True)
+                    df_cached["date"] = df_cached["date"].apply(normalize_to_utc)
                     return df_cached
 
         if not self.api_key:
