@@ -288,11 +288,15 @@ def generate_html_report(
         for ticker, grp in news_df.groupby("ticker"):
             items_html = []
             for _, item in grp.head(2).iterrows():
+                url = item.get("url", "#") if hasattr(item, "get") else getattr(item, "url", "#")
+                title = (item.get("title") or item.get("text") or "News") if hasattr(item, "get") else getattr(item, "title", "News")
+                date_val = (item.get("date") or item.get("ts_utc") or "") if hasattr(item, "get") else getattr(item, "date", "")
+                snippet = (item.get("snippet") or item.get("text") or "") if hasattr(item, "get") else getattr(item, "snippet", "")
                 items_html.append(
                     f"<div class='news-item'>"
-                    f"<div class='news-title'><a href='{item['url']}' target='_blank' rel='noopener'>{item['title']}</a></div>"
-                    f"<div class='news-date'>{item['date']}</div>"
-                    f"<div class='news-snippet'>{str(item['snippet'])[:200]}...</div>"
+                    f"<div class='news-title'><a href='{url}' target='_blank' rel='noopener'>{title}</a></div>"
+                    f"<div class='news-date'>{date_val}</div>"
+                    f"<div class='news-snippet'>{str(snippet)[:200]}...</div>"
                     f"</div>"
                 )
             news_cards.append(
