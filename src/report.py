@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any, Optional, Union
 
 import pandas as pd
+import plotly.offline as pyo
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
@@ -341,7 +342,9 @@ def generate_html_report(
 <head>
   <meta charset="UTF-8">
   <title>Sentiment-Price-Agent Dashboard | HKEX & KRX</title>
-  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <script type="text/javascript">
+    {pyo.get_plotlyjs()}
+  </script>
   <style>
     :root {{
       --bg: #0b0e14;

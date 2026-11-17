@@ -75,6 +75,37 @@ def run_full_pipeline() -> None:
     print("=" * 80 + "\n")
 
 
+def serve_ui(port: int = 8080) -> None:
+    """Serve reports/report.html locally and open in the default web browser."""
+    import http.server
+    import socketserver
+    import webbrowser
+
+    report_path = Path("reports/report.html").resolve()
+    if not report_path.is_file():
+        print("Report not found. Generating now...")
+        generate_html_report()
+
+    class QuietHandler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, directory=str(report_path.parent), **kwargs)
+
+        def log_message(self, format, *args):
+            pass  # Suppress noise
+
+    url = f"http://127.0.0.1:{port}/report.html"
+    print(f"\nServing interactive UI dashboard at {url}")
+    print("Opening browser... (Press Ctrl+C to stop the server)\n")
+    webbrowser.open(url)
+
+    socketserver.TCPServer.allow_reuse_address = True
+    try:
+        with socketserver.TCPServer(("127.0.0.1", port), QuietHandler) as httpd:
+            httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\nUI Server stopped.")
+
+
 def main() -> None:
     """CLI entrypoint."""
     setup_logging()
@@ -82,6 +113,7 @@ def main() -> None:
         description="Sentiment-Price-Agent: Algorithmic sentiment & price prediction pipeline for HKEX and KRX."
     )
     parser.add_argument("--all", action="store_true", help="Run the complete end-to-end pipeline")
+    parser.add_argument("--ui", "--serve", dest="ui", action="store_true", help="Launch visual web dashboard in browser")
     parser.add_argument("--ingest", action="store_true", help="Ingest prices, news, and social posts")
     parser.add_argument("--score", action="store_true", help="Score sentiment with LLM provider")
     parser.add_argument("--features", action="store_true", help="Build hourly features and support/resistance levels")
@@ -95,7 +127,9 @@ def main() -> None:
         parser.print_help()
         sys.exit(0)
 
-    if args.smoke:
+    if args.ui:
+        serve_ui()
+    elif args.smoke:
         run_stage1_smoke_test()
     elif args.all:
         run_full_pipeline()
